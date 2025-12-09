@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Alfath</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f1b16, #081311, #0f1b16);
+      color: #e8f5f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      background: rgba(15, 27, 22, 0.65);
+      backdrop-filter: blur(14px);
+      border-radius: 26px;
+      display: grid;
+      grid-template-columns: 330px 1fr;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .side-profile {
+      background: linear-gradient(160deg, #102e25, #0b1f18);
+      padding: 35px 25px;
+      text-align: center;
+    }
+
+    .avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      background: linear-gradient(135deg, #1f4d40, #0e2a23);
+      border: 3px solid #2dd4bf;
+      overflow: hidden;
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .name {
+      font-size: 22px;
+      font-weight: 600;
+      color: #99f6e4;
+      line-height: 1.4;
+    }
+
+    .nickname {
+      font-size: 14px;
+      color: #5eead4;
+      margin-bottom: 20px;
+    }
+
+    .info-list {
+      text-align: left;
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 1.8;
+      color: #e0f2f1;
+    }
+
+    .main-content {
+      padding: 30px 30px;
+      background: rgba(8,19,17,0.6);
+    }
+
+    .card {
+      background: rgba(12, 32, 27, 0.75);
+      border-radius: 18px;
+      padding: 18px 20px;
+      margin-bottom: 16px;
+      border: 1px solid rgba(45, 212, 191, 0.15);
+    }
+
+    .card h3 {
+      font-size: 15px;
+      letter-spacing: 1px;
+      color: #99f6e4;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    ul, ol {
+      margin-left: 20px;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    a {
+      color: #5eead4;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .schedule {
+      margin-top: 20px;
+      background: rgba(12, 32, 27, 0.75);
+      border-radius: 18px;
+      padding: 20px;
+      border: 1px solid rgba(45, 212, 191, 0.15);
+    }
+
+    .schedule-title {
+      text-align: center;
+      font-size: 17px;
+      color: #99f6e4;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    th, td {
+      border: 1px solid rgba(255,255,255,0.1);
+      padding: 10px 8px;
+    }
+
+    th {
+      background: rgba(16, 46, 37, 0.9);
+      color: #99f6e4;
+    }
+
+    td {
+      color: #e8f5f2;
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="side-profile">
+    <div class="avatar">
+      <img src="alfath.jpg">
+    </div>
+    <div class="name">Muhammad Alfath Fadhil Akbar</div>
+    <div class="nickname">alfath</div>
+
+    <div class="info-list">
+      <p><strong>Hobi:</strong></p>
+      <ul>
+        <li>Futsal</li>
+        <li>Lari</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="main-content">
+
+    <div class="card">
+      <h3>Riwayat Sekolah</h3>
+      <ol>
+        <li>TK Kartika</li>
+        <li>SDN 3 Parepare</li>
+        <li>MTsN Parepare</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <h3>Media Sosial</h3>
+      <p>
+        <a href="https://www.instagram.com/mhmmdalfatth_?igsh=eWFnYmtrNXRjcW9k" target="_blank">
+          Instagram: @mhmmdalfatth_
+        </a>
+      </p>
+    </div>
+
+    <div class="schedule">
+      <div class="schedule-title">Jadwal Pelajaran</div>
+
+      <table>
+        <tr>
+          <th>Hari</th>
+          <th>Mata Pelajaran</th>
+          <th>Waktu</th>
+        </tr>
+
+        <tr>
+          <td rowspan="3">Senin</td>
+          <td>Bhs Inggris</td>
+          <td>08.00 - 10.00</td>
+        </tr>
+        <tr>
+          <td>Kimia</td>
+          <td>10.15 - 12.15</td>
+        </tr>
+        <tr>
+          <td>Ekonomi</td>
+          <td>13.30 - 15.30</td>
+        </tr>
+
+        <tr>
+          <td rowspan="4">Selasa</td>
+          <td>Fisika</td>
+          <td>07.15 - 09.20</td>
+        </tr>
+        <tr>
+          <td>PKN</td>
+          <td>09.20 - 10.55</td>
+        </tr>
+        <tr>
+          <td>Informatika</td>
+          <td>10.55 - 12.15</td>
+        </tr>
+        <tr>
+          <td>Geografi</td>
+          <td>13.30 - 15.30</td>
+        </tr>
+
+        <tr>
+          <td rowspan="4">Rabu</td>
+          <td>Prakarya</td>
+          <td>07.15 - 08.40</td>
+        </tr>
+        <tr>
+          <td>Matematika</td>
+          <td>08.40 - 10.00</td>
+        </tr>
+        <tr>
+          <td>Biologi</td>
+          <td>10.15 - 12.15</td>
+        </tr>
+        <tr>
+          <td>Sejarah</td>
+          <td>13.30 - 15.30</td>
+        </tr>
+
+        <tr>
+          <td rowspan="4">Kamis</td>
+          <td>PJOK</td>
+          <td>07.15 - 09.20</td>
+        </tr>
+        <tr>
+          <td>Matematika</td>
+          <td>09.20 - 10.55</td>
+        </tr>
+        <tr>
+          <td>Bhs Indonesia</td>
+          <td>10.55 - 12.15</td>
+        </tr>
+        <tr>
+          <td>Pend Agama Islam</td>
+          <td>13.30 - 15.30</td>
+        </tr>
+
+        <tr>
+          <td rowspan="3">Jumat</td>
+          <td>Bhs Indonesia</td>
+          <td>07.30 - 08.50</td>
+        </tr>
+        <tr>
+          <td>Bhs Daerah</td>
+          <td>08.50 - 09.30</td>
+        </tr>
+        <tr>
+          <td>Sosiologi</td>
+          <td>09.45 - 11.45</td>
+        </tr>
+      </table>
+
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
